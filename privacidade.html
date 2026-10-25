@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidade</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #2d3748;
+      background-color: #f7fafc;
+      margin: 0;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    h1, h2, h3 { color: #1a202c; margin-top: 1.5em; }
+    h1 { border-bottom: 2px solid #edf2f7; padding-bottom: 12px; margin-top: 0; }
+    code { background: #edf2f7; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+    a { color: #3182ce; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul, ol { padding-left: 24px; }
+    blockquote { border-left: 4px solid #cbd5e0; margin: 0; padding-left: 16px; color: #718096; }
+  </style>
+</head>
+<body>
+  <div class="container" id="content"></div>
+
+  <!-- Biblioteca para renderizar Markdown -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <!-- EDITAR APENAS O TEXTO MARKDOWN ABAIXO -->
+  <script type="text/markdown" id="markdown-source">
+# Política de Privacidade
+
+*Última atualização: Outubro de 2026*
+
+A sua privacidade é fundamental para nós. Esta Política de Privacidade explica como o **Tachys - Oficina de escrita** lida com os seus dados pessoais, textos e chaves de acesso.
+
+---
+
+### 1. Armazenamento Local e Coleta de Dados pelo Aplicativo
+* **Dados de uso:** O aplicativo não possui servidores próprios e não realiza coleta, rastreamento, armazenamento externo ou venda de dados pessoais, métricas de uso ou conteúdo de suas anotações. Porém é possível enviar dados para serviços de terceiros **opcionalmente**.
+* **Armazenamento local:** Todas as suas notas, rascunhos e dados do aplicativo ficam salvos exclusivamente na memória do seu próprio dispositivo.
+
+### 2. Funcionalidade de Inteligência Artificial e Envio de Dados (API do Google)
+O aplicativo oferece uma função opcional de avaliação de texto e geração de missões via Inteligência Artificial.
+* **Envio Direto ao Provedor:** Quando você aciona a função de IA, o texto aberto, os prompts personalizados, as missões ativas e a versão do texto do envio anterior são enviados diretamente do seu dispositivo para a API do **Google Gemini**.
+* **Sem Intermediários:** NENHUM dado passa por servidores do desenvolvedor do **Tachys - Oficina de escrita**. A comunicação ocorre diretamente entre o seu dispositivo e os servidores do Google.
+* **Política do Provedor:** O processamento, retenção e tratamento dos textos enviados à API estão sujeitos à [Política de Privacidade do Google](https://policies.google.com/privacy) e aos Termos de Serviço da API do Google Gemini.
+
+**Não utilize o botão "Avaliar Capítulo" se o texto aberto tiver dados pessoais ou qualquer informação que você não aceite compartilhar.**
+
+### 3. Armazenamento da Chave de API (BYOK)
+* Para acionar a Inteligência Artificial, o usuário insere sua própria chave de API (*Bring Your Own Key*).
+* A chave de API fornecida é armazenada **exclusivamente de forma local** no seu dispositivo, utilizada apenas para autenticar as requisições junto à API do Google.
+* O aplicativo não transmite sua chave para nenhum outro destino que não seja o endpoint oficial da API do Google.
+
+### 4. Controle e Exclusão de Dados
+Como todos os dados ficam salvos em seu dispositivo:
+* Você pode apagar suas notas ou remover sua chave de API a qualquer momento diretamente na interface do aplicativo.
+* Ao desinstalar o aplicativo ou limpar os dados do app nas configurações do seu sistema operacional, todo o histórico local de notas e configurações armazenadas será permanentemente apagado. É recomendável fazer backup periodicamente.
+
+### 5. Alterações nesta Política
+Esta Política de Privacidade pode ser atualizada ocasionalmente para refletir mudanças no aplicativo. Recomendo a consulta periódica desta página.
+
+---
+
+### 6. Contato
+Se tiver dúvidas ou preocupações sobre esta Política de Privacidade, entre em contato pelo e-mail: **exosoul.artist@gmail.com**.
+  </script>
+
+  <script>
+    document.getElementById('content').innerHTML = marked.parse(document.getElementById('markdown-source').textContent);
+  </script>
+</body>
+</html>
